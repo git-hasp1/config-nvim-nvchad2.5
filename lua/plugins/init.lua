@@ -85,4 +85,10 @@ return {
       require("better_escape").setup()
     end,
   },
+
+  {
+    "stevearc/dressing.nvim",
+    lazy = false,
+    opts = {},
+  },
 }
