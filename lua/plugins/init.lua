@@ -17,15 +17,16 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "lua-language-server",
-        "emmet-ls",
+        "gopls",
         "stylua",
         "html-lsp",
         "css-lsp",
         "prettier",
+        "emmet-ls",
+        "eslint_d",
         "eslint-lsp",
-        "gopls",
         "js-debug-adapter",
+        "lua-language-server",
         "typescript-language-server",
       },
     },
@@ -40,10 +41,29 @@ return {
         "vimdoc",
         "html",
         "css",
+        "bash",
+        "csv",
+        "helm",
+        "jinja",
+        "json",
+        "nginx",
+        "rust",
+        "scss",
+        "jsdoc",
         "typescript",
         "javascript",
         "go",
+        "sql",
+        "tsx",
+        "toml",
+        "xml",
+        "php",
+        "yaml",
+        "markdown",
+        "markdown_inline",
         "python",
+        "ini",
+        "http",
       },
     },
   },
@@ -70,13 +90,13 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
 
-  {
-    "ggandor/leap.nvim",
-    lazy = false,
-    config = function()
-      require("leap").add_default_mappings(true)
-    end,
-  },
+  -- {
+  --   "ggandor/leap.nvim",
+  --   lazy = false,
+  --   config = function()
+  --     require("leap").add_default_mappings(true)
+  --   end,
+  -- },
 
   {
     "max397574/better-escape.nvim",
